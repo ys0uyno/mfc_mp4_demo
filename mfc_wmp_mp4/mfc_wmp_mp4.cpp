@@ -5,6 +5,7 @@
 #include "stdafx.h"
 #include "mfc_wmp_mp4.h"
 #include "mfc_wmp_mp4Dlg.h"
+#include "CWMPPlayer4.h"
 
 #ifdef _DEBUG
 #define new DEBUG_NEW

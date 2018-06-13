@@ -3,6 +3,7 @@
 //
 
 #pragma once
+#include "cwmpplayer4.h"
 
 
 // Cmfc_wmp_mp4Dlg dialog
@@ -29,4 +30,6 @@ protected:
 	afx_msg void OnPaint();
 	afx_msg HCURSOR OnQueryDragIcon();
 	DECLARE_MESSAGE_MAP()
+public:
+	CWMPPlayer4 m_player;
 };

@@ -57,6 +57,7 @@ Cmfc_wmp_mp4Dlg::Cmfc_wmp_mp4Dlg(CWnd* pParent /*=NULL*/)
 void Cmfc_wmp_mp4Dlg::DoDataExchange(CDataExchange* pDX)
 {
 	CDialogEx::DoDataExchange(pDX);
+	DDX_Control(pDX, IDC_OCX_MP4, m_player);
 }
 
 BEGIN_MESSAGE_MAP(Cmfc_wmp_mp4Dlg, CDialogEx)
@@ -98,6 +99,8 @@ BOOL Cmfc_wmp_mp4Dlg::OnInitDialog()
 	SetIcon(m_hIcon, FALSE);		// Set small icon
 
 	// TODO: Add extra initialization here
+	m_player.put_uiMode(L"none");
+	m_player.put_URL(L"D:\\test.mp4");
 
 	return TRUE;  // return TRUE  unless you set the focus to a control
 }
